@@ -5,6 +5,9 @@ import Latest from "./components/Latest/Latest";
 import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
+import Blog1 from "./components/Blog/Blog1";
+import Blog2 from "./components/Blog/Blog2";
+import Blog3 from "./components/Blog/Blog3";
 
 function App() {
   return (
@@ -26,6 +29,18 @@ function App() {
           <Route>
             <Navbar />
             <Contact path="/contact" />
+          </Route>
+          <Route path="blog1">
+            <Navbar />
+            <Blog1 />
+          </Route>
+          <Route path="blog2">
+            <Navbar />
+            <Blog2 />
+          </Route>
+          <Route path="blog3">
+            <Navbar />
+            <Blog3 />
           </Route>
         </Switch>
       </div>
