@@ -9,6 +9,7 @@ import Blog1 from "./components/Blog/Blog1";
 import Blog2 from "./components/Blog/Blog2";
 import Blog3 from "./components/Blog/Blog3";
 
+
 function App() {
   return (
     <Router>
@@ -18,27 +19,27 @@ function App() {
             <Navbar />
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path="/about" >
             <Navbar />
             <About />
           </Route>
-          <Route path="/latest">
+          <Route path="/latest" >
             <Navbar />
             <Latest />
           </Route>
-          <Route>
+          <Route path="/contact">
             <Navbar />
-            <Contact path="/contact" />
+            <Contact />
           </Route>
-          <Route path="blog1">
+          <Route path="/blog1" >
             <Navbar />
             <Blog1 />
           </Route>
-          <Route path="blog2">
+          <Route path="/blog2" >
             <Navbar />
             <Blog2 />
           </Route>
-          <Route path="blog3">
+          <Route path="/blog3" >
             <Navbar />
             <Blog3 />
           </Route>
