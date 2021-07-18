@@ -1,9 +1,13 @@
 import React from 'react'
 
-const BookStore = () => {
+const BookStore = ({results}) => {
     return (
         <div>
-            
+            {
+                results.map(book => (
+                    <div>{book.volumeInfo.title}</div>
+                ))
+            }
         </div>
     )
 }
