@@ -7,7 +7,7 @@ import axios from "axios";
 function App() {
   const [book, setBook] = useState("");
   const [results, setResults] = useState([]);
-  const [query, setQuery] = useState("");
+
 
   function handleChange(e) {
     const book = e.target.value;
