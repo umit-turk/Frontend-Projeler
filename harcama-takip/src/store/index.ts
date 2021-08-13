@@ -2,7 +2,7 @@ import { UserState } from './../types/user';
 import { combineReducers } from "redux";
 import userReducer from "./reducers/userReducer";
 
-interface AppState {
+export interface AppState {
     user: UserState;
    /*  categories: any;
     records: any; */
