@@ -12,8 +12,9 @@ import {
 import { Category, CategoryForm } from "../types/category";
 import { SketchPicker } from "react-color";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
+import { Mode } from "../types/general";
 
-type Mode = "new" | "edit" | "delete";
+
 
 const emptyForm: CategoryForm = {
   name: "",
@@ -106,10 +107,16 @@ function Categories() {
   return (
     <>
       <div>
-        <div style={{display: "flex", justifyContent: "flex-end", marginBottom: 10}}>
-        <Button type="primary" onClick={() => showModal("new")}>
-          New Category
-        </Button>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            marginBottom: 10,
+          }}
+        >
+          <Button type="primary" onClick={() => showModal("new")}>
+            New Category
+          </Button>
         </div>
         <Modal
           title={
